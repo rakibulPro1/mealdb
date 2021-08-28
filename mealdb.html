@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meal DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<style>
+    #single-meal-result .card {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #single-meal-result .card .card-body{
+        height: 150px;  
+    }
+    #error-text{
+        color: red;
+        text-align: center;
+    }
+</style>
+<body style="background: #2d2013;" >
+    <!-- meals search  -->
+    <section class="my-3">
+        <h2 class="text-center text-warning">Seach The Food You Want</h2>
+        <div class="input-group my-3 w-50 mx-auto">
+            <input id="search-field" type="text" class="form-control border-0" placeholder="Search Food" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchFood()" class="btn btn-outline-secondary text-warning bg-transparent" type="button">Search</button>
+        </div>
+
+        <p id="error-text"></p>
+
+    </section>
+    <!-- single meals result  -->
+    <section id="single-meal-result" class="my-4">
+        
+    </section>
+    <!-- meals result   -->
+    <section class="container">
+        <div id="meals-result" class="row row-cols-1 row-cols-md-3 g-4">
+            
+          </div>
+    </section>
+    
+
+
+
+    <script src="mealdb.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
